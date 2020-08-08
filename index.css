@@ -1,0 +1,208 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: #c56c76;
+  }
+  body {
+    background: #F5F3F0;
+    color: #5C626A;
+    font-size: 16px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  h1,
+  h2,
+  h3 {
+    padding: 10px 0;
+  }
+  li {
+    margin: 0 0 1.3em 0;
+  }
+  /* Temp styles */
+  ul {
+    margin: 0px 10px;
+    padding: 20px;
+  }
+  .button {
+    max-width: 70%;
+    background-color: #c56c76;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    padding: 5px;
+  }
+  .details-card {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .details-card .info-card {
+    margin: 10px 0px;
+  }
+  .details-card-container {
+    flex: 0 1 33%;
+  }
+
+  .details-talks {
+    flex: 0 1 66%;
+  }
+  .footer {
+    width: 100%;
+    background-color: #51525A;
+    color: #fafafa;
+    bottom: 0;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    line-height: 2em;
+  }
+  .footer-2-col {
+    justify-content: center;
+    display: flex;
+  }
+  .footer-contact-card {
+    max-width: 30%;
+    padding: 20px 10px;
+  }
+  .footer-copyright-card {
+    max-width: 30%;
+    padding: 20px 10px;
+  }
+  .footer-image-card .footer-img {
+    clear: both;
+    display: block;
+  }
+  .footer-img {
+    margin: 0 auto;
+    max-width: 150px;
+  }
+  .header {
+    background-color: #5d5c6a;
+    background-image: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #F5F3F0;
+    text-align: center;
+    max-height: 130px;
+    padding: 1.8em 24px 1.6em;
+  }
+  .header-location {
+    padding: 10px;
+  }
+  .header-logo img {
+    max-width: 30em;
+  }
+  .info-card {
+    background-color: #ffffff;
+    color: #797166;
+    border: 1px solid rgba(105, 99, 99, 0.244);
+    padding: 15px;
+    height: auto;
+  }
+  .info-card .button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .main-content {
+    margin: 0 auto;
+    padding: 0 24px;
+    max-width: 62em;
+  }
+  .speakers-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .speakers-container img {
+    float: left;
+    max-width: 33%;
+    border-radius: 7px;
+    margin: 5px;
+  }
+  .speaker-details-col {
+    margin: 5px;
+    flex: 1 1 30%;
+  }
+  .speaker-desc {
+    padding: 5px;
+    /* desc below image */
+    clear: both;
+    display: block;
+  }
+
+  .speaker-name {
+    padding-top: 5px;
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  .speaker-title {
+    font-size: 1.2em;
+  }
+
+  /* 2 up transition, the cols were getting too squished. */
+
+  @media screen and (max-width: 1000px){
+    .details-card .info-card {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    .info-card {
+      margin: 0 auto;
+      margin-bottom: 10px;
+      max-width: 70%;
+    }
+
+    .speakers-container img {
+      width: 120px;
+    }
+    .speaker-details-col {
+      margin: 5px;
+      flex: 1 1 45%;
+    }
+
+    .speakers-container .button {
+      max-width: 30%;
+    }
+  }
+  /* Mobile breakpoints - I chose a higher amount due to the feel */
+  @media screen and (max-width: 850px) {
+    .details-card {
+      display: block;
+    }
+    .footer{
+      line-height: 1.2em;
+    }
+    .footer-2-col {
+      display: block;
+      padding: 0 30px;
+    }
+    .footer-2-col .footer-contact-card {
+      max-width: 100%;
+      padding: 10px 10px;
+    }
+    .footer-copyright-card {
+      max-width: 100%;
+      padding: 10px 10px;
+    }
+    .header-logo img {
+      max-width: 100%;
+    }
+    .speaker-details-col {
+      margin: 5px;
+      flex: 1 1 100%;
+    }
+
+    .speakers-container img {
+      width: 100px;
+    }
+   .info-card .button {
+      max-width: 40%;
+    }
+  }
