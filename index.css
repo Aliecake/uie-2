@@ -8,7 +8,7 @@
     color: #99545c;
   }
   body {
-    background: #fafafa;
+    background: #F5F3F0;
     color: #5C626A;
     font-size: 16px;
     font-family: "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
@@ -96,7 +96,7 @@
     background-position: center;
     color: #F5F3F0;
     text-align: center;
-    height: 350px;
+    height: 275px;
     padding: 1.1em;
   }
   .header-sub-container {
